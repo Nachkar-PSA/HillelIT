@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="./img/favicon.svg" type="image/svg+xml">
+</head>
+
+<body>
+    <div class="reg__container"> <!--Визуально выделить форму регистрации -->
+        <div class="reg__wrapper">
+            <div class="form__close-wrapper">
+                <button class="form__close" type="button" aria-label="Close form">
+                    <img src="./img/close.svg" alt="Close crist">
+                </button>
+            </div>
+            <div class="form__text">
+                <p class="form__text-login">Login</p>
+                <span class="form__text-sep">|</span>
+                <p class="form__text-register">Register</p>
+            </div>
+            <div class="form__data">
+                <p class="form__desc">Enter your email and password to register.</p>
+                <form>
+                    <label for="username" aria-label="Username"></label>
+                    <input class="input__field" type="text" name="username" id="username" placeholder="Username"
+                        required>
+
+                    <label for="email" aria-label="Email"></label>
+                    <input class="input__field" type="email" name="email" id="email"
+                        placeholder="Enter your email address" required>
+
+                    <div class="password__container">
+                        <label for="password" aria-label="Password"></label>
+                        <input class="input__field password__field" type="password" name="password" id="password"
+                            placeholder="Password" required>
+                        <img class="input__img" src="./img/eye-hide.svg" alt="Hide Password">
+                    </div>
+
+                    <label for="confirm-password" aria-label="Confirm password"></label>
+                    <input class="input__field" type="password" name="confirm-password" id="confirm-password"
+                        placeholder="Confirm password" required>
+                    <button class="btn" type="submit">Register</button>
+                </form>
+                <p class="reg__text">Or register with</p>
+                <div class="reg_container">
+                    <button class="google__btn" type="button">
+                        <img src="./img/google-logo.svg" alt="Google Logo">
+                        Continue with Google
+                    </button>
+                    <button class="facebook__btn" type="button">
+                        <img src="./img/facebook-logo.svg" alt="Facebook Logo">
+                        Continue with Facebook
+                    </button>
+                </div>
+            </div>
+            <div class="footer__line"></div>
+        </div>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

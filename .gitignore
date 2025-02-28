@@ -1,0 +1,8 @@
+# Исключить всё, кроме текущей папки GREENSHOP
+/*
+!css/
+!fonts/
+!img/
+!js/
+!index.html
+!.gitignore
