@@ -1,0 +1,42 @@
+@font-face {
+    font-family: 'Cera Pro';
+    src: url("../fonts/CeraPro-Regular.eot");
+    src: url("../fonts/CeraPro-Regular.woff") format("woff"),
+        url("../fonts/CeraPro-Regular.ttf") format("truetype");
+    font-size: 400px;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Cera Pro';
+    src: url("../fonts/CeraPro-Bold.eot");
+    src: url("../fonts/CeraPro-Bold.woff") format("woff"),
+        url("../fonts/CeraPro-Bold.ttf") format("truetype");
+    font-size: 500px;
+    src: url();
+}
+
+
+body {}
+
+.header {
+    background-color: #fff;
+}
+
+.container {
+    max-width: 1200px;
+}
+
+.header__inner {}
+
+.logo {}
+
+.menu {}
+
+.menu__list {}
+
+.menu__item {}
+
+.menu__link {}
+
+.logo__btn {}
