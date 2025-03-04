@@ -70,10 +70,12 @@ header {
 
 .btn__login:hover {
     background-color: #368c44;
-    border: 1px solid #46A358;
 }
 
-section {
+.welcome {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 0 120px;
     background: linear-gradient(98deg, rgba(245, 245, 245, 0.50) -23.46%, rgba(245, 245, 245, 0.50) 107.51%);
 }
@@ -131,5 +133,4 @@ section {
 
 .w__btn:hover {
     background-color: #368c44;
-    border: 1px solid #46A358;
 }
