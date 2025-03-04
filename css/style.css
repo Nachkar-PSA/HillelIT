@@ -17,8 +17,8 @@
 }
 
 @font-face {
-    font-family: 'Cera Pro Bolt';
-    src: url('../font/CeraPro-Bolt.eot') format('eot'),
+    font-family: 'Cera Pro Bold';
+    src: url('../font/CeraPro-Bold.eot') format('eot'),
         url('../fonts/CeraPro-Bold.woff') format('woff'),
         url('../fonts/CeraPro-Bold.ttf') format('truetype');
     font-weight: 700;
@@ -43,7 +43,7 @@ header {
     display: flex;
     align-items: start;
     justify-content: space-between;
-
+    border-bottom: 1px solid rgba(70, 163, 88, 0.50);
 }
 
 .list {
