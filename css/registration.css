@@ -66,6 +66,15 @@ body {
     align-items: flex-end;
 }
 
+.form__close:hover svg path {
+    stroke: #b32259;
+}
+
+.form__close:hover svg {
+    transform: scale(1.25);
+    transition: transform 0.3s ease;
+}
+
 .form__text {
     display: flex;
     justify-content: center;
