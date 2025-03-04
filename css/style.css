@@ -25,15 +25,6 @@
     font-style: normal;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    text-decoration: none;
-    font-style: normal;
-    box-sizing: border-box;
-}
-
 header {
     padding: 30px 120px;
     margin-bottom: 12px;
@@ -54,20 +45,31 @@ header {
 
 .list_item {
     padding: 8px 25px 25px;
-    font-weight: 700;
+    font-family: 'Cera Pro Regular', sans-serif;
+    color: #3D3D3D;
+    font-size: 16px;
 }
 
 .list_item.active {
-    border-bottom: ;
+    border-bottom: 3px solid #46A358;
+    font-family: 'Cera Pro Bold', sans-serif;
 }
 
-.btn {
-    padding: 8px 18px;
+.btn__login {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 8px 17px 7px 17px;
     gap: 4px;
     border-radius: 6px;
+    background-color: #46A358;
     color: #fff;
-    background: #46A358;
+    font-family: 'Cera Pro Medium', sans-serif;
+    font-size: 16px;
+    border: none;
+}
+
+.btn__login:hover {
+    background-color: #368c44;
+    border: 1px solid #46A358;
 }
