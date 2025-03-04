@@ -1,5 +1,5 @@
 @font-face {
-    font-family: "Cera Pro";
+    font-family: "Cera Pro Regular";
     src: url("../fonts/CeraPro-Regular.eot");
     src: url("../fonts/CeraPro-Regular.woff") format("woff"),
         url("../fonts/CeraPro-Regular.ttf") format("truetype");
@@ -8,7 +8,7 @@
 }
 
 @font-face {
-    font-family: "Cera Pro";
+    font-family: "Cera Pro Medium";
     src: url("../fonts/CeraPro-Medium.eot");
     src: url("../fonts/CeraPro-Medium.woff") format("woff"),
         url("../fonts/CeraPro-Medium.ttf") format("truetype");
@@ -17,7 +17,7 @@
 }
 
 @font-face {
-    font-family: "Cera Pro";
+    font-family: "Cera Pro Bold";
     src: url("../fonts/CeraPro-Bold.eot");
     src: url("../fonts/CeraPro-Bold.woff") format("woff"),
         url("../fonts/CeraPro-Bold.ttf") format("truetype");
@@ -26,7 +26,7 @@
 }
 
 body {
-    font-family: 'Cera pro', sans-serif;
+    font-family: 'Cera Pro Regular', sans-serif;
     font-size: 13px;
     font-weight: 400;
     line-height: 16px;
@@ -62,11 +62,7 @@ body {
 .form__close {
     margin-top: 13px;
     margin-right: 13px;
-    background-color: #fff;
-    border: none;
     cursor: pointer;
-    width: 18px;
-    height: 18px;
     align-items: flex-end;
 }
 
