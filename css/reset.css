@@ -14,6 +14,7 @@
 ul,
 ol {
     list-style: none;
+    text-decoration: none;
 }
 
 /* 3, Remove default button styles */

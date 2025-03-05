@@ -42,14 +42,23 @@ header {
     justify-content: center;
 }
 
-.list_item {
-    padding: 8px 25px 25px;
+.list__item {
     font-family: 'Cera Pro Regular', sans-serif;
-    color: #3D3D3D;
     font-size: 16px;
 }
 
-.list_item.active {
+.list__link {
+    display: block;
+    padding: 8px 25px 25px;
+    color: #3D3D3D;
+    transition: color 0.3s;
+}
+
+.list__link:hover {
+    color: #46A358;
+}
+
+.list__item.active {
     border-bottom: 3px solid #46A358;
     font-family: 'Cera Pro Bold', sans-serif;
 }
