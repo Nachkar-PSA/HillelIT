@@ -3,7 +3,16 @@
     src: url("../fonts/CeraPro-Regular.eot");
     src: url("../fonts/CeraPro-Regular.woff") format("woff"),
         url("../fonts/CeraPro-Regular.ttf") format("truetype");
-    font-size: 400px;
+    font-size: 400;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Cera Pro';
+    src: url("../fonts/CeraPro-Medium.eot");
+    src: url("../fonts/CeraPro-Medium.woff") format("woff"),
+        url("../fonts/CeraPro-Medium.ttf") format("truetype");
+    font-size: 500;
     font-weight: normal;
 }
 
@@ -12,28 +21,42 @@
     src: url("../fonts/CeraPro-Bold.eot");
     src: url("../fonts/CeraPro-Bold.woff") format("woff"),
         url("../fonts/CeraPro-Bold.ttf") format("truetype");
-    font-size: 500px;
-    src: url();
+    font-size: 700;
+    font-weight: normal;
 }
 
 
-body {}
-
-.header {
+body {
+    font-family: 'Cera Pro', sans-serif;
+    font-size: 14px;
+    line-height: 16px;
+    color: #3D3D3D;
+    margin: 0;
+    padding: 0;
     background-color: #fff;
 }
 
-.container {
-    max-width: 1200px;
-}
+.header {}
 
-.header__inner {}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
 .logo {}
 
-.menu {}
+.menu {
+    display: flex;
+    justify-content: space-between;
+}
 
-.menu__list {}
+.menu__list {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 50px;
+}
 
 .menu__item {}
 
