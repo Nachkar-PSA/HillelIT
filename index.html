@@ -11,33 +11,59 @@
 </head>
 
 <body>
-    <header class="header">
-        <div class="header__inner">
+    <header>
+        <div class="header">
             <a class="logo" href="index.html">
                 <img src="./img/logo.svg" alt="Logo Greenshop">
             </a>
-            <nav class="menu" aria-label="Main navigation">
-                <ul class="menu__list">
-                    <li class="menu__item">
-                        <a class="menu__link" href="#">Home</a>
+            <nav>
+                <ul class="list">
+                    <li class="list__item active">
+                        <a href="#" class="list__link">Home</a>
                     </li>
-                    <li class="menu__item">
-                        <a class="menu__link" href="#">Shop</a>
+                    <li class="list__item">
+                        <a href="#" class="list__link">Shop</a>
                     </li>
-                    <li class="menu__item">
-                        <a class="menu__link" href="#">Plant Care</a>
+                    <li class="list__item">
+                        <a href="#" class="list__link">Plant Care</a>
                     </li>
-                    <li class="menu__item">
-                        <a class="menu__link" href="#">Blogs</a>
+                    <li class="list__item">
+                        <a href="#" class="list__link">Blogs</a>
                     </li>
                 </ul>
-                <button class="logo__btn">
-                    <img src="./img/logout.svg" alt="Logout icon">
-                    Login
-                </button>
             </nav>
+            <button class="btn__login" id="loginButton">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 18 18" fill="none">
+                    <path d="M17.1601 9.1006H7.12598" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    <path d="M14.7212 6.67059L17.1612 9.10059L14.7212 11.5306" stroke="white" stroke-width="1.5"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                        d="M12.6342 5.35826C12.3592 2.37493 11.2425 1.2916 6.80082 1.2916C0.883322 1.2916 0.883322 3.2166 0.883322 8.99993C0.883322 14.7833 0.883322 16.7083 6.80082 16.7083C11.2425 16.7083 12.3592 15.6249 12.6342 12.6416"
+                        stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                Login
+            </button>
         </div>
     </header>
+    <section class="welcome">
+        <div class="welcome__content">
+            <p class="w__text">Welcome to GreenShop</p>
+            <h1 class="w__title">
+                Let’s Make a Better <span>Planet</span>
+            </h1>
+            <p class="w__content">
+                We are an online plant shop offering a wide range of cheap and trendy plants. Use our plants to
+                create
+                an unique Urban Jungle. Order your favorite plants!
+            </p>
+            <button class="w__btn">SHOP NOW</button>
+        </div>
+        <div class="plants">
+            <img src="./img/big-plant.png" alt="Big Plant" class="plant big">
+            <img src="./img/small-plant.png" alt="Small Plant" class="plant small">
+        </div>
+    </section>
 
 </body>
 

@@ -1,65 +1,167 @@
 @font-face {
-    font-family: 'Cera Pro';
-    src: url("../fonts/CeraPro-Regular.eot");
-    src: url("../fonts/CeraPro-Regular.woff") format("woff"),
-        url("../fonts/CeraPro-Regular.ttf") format("truetype");
-    font-size: 400;
-    font-weight: normal;
+    font-family: 'Cera Pro Regular';
+    src: url('../font/CeraPro-Regular.eot') format('eot'),
+        url('../fonts/CeraPro-Regular.woff') format('woff'),
+        url('../fonts/CeraPro-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
 }
 
 @font-face {
-    font-family: 'Cera Pro';
-    src: url("../fonts/CeraPro-Medium.eot");
-    src: url("../fonts/CeraPro-Medium.woff") format("woff"),
-        url("../fonts/CeraPro-Medium.ttf") format("truetype");
-    font-size: 500;
-    font-weight: normal;
+    font-family: 'Cera Pro Medium';
+    src: url('../font/CeraPro-Medium.eot') format('eot'),
+        url('../fonts/CeraPro-Medium.woff') format('woff'),
+        url('../fonts/CeraPro-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
 }
 
 @font-face {
-    font-family: 'Cera Pro';
-    src: url("../fonts/CeraPro-Bold.eot");
-    src: url("../fonts/CeraPro-Bold.woff") format("woff"),
-        url("../fonts/CeraPro-Bold.ttf") format("truetype");
-    font-size: 700;
-    font-weight: normal;
+    font-family: 'Cera Pro Bold';
+    src: url('../font/CeraPro-Bold.eot') format('eot'),
+        url('../fonts/CeraPro-Bold.woff') format('woff'),
+        url('../fonts/CeraPro-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
 }
 
+header {
+    padding: 30px 120px 0 120px;
+}
 
-body {
-    font-family: 'Cera Pro', sans-serif;
-    font-size: 14px;
-    line-height: 16px;
+.header {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(70, 163, 88, 0.50);
+}
+
+.list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.list__item {
+    font-family: 'Cera Pro Regular', sans-serif;
+    font-size: 16px;
+}
+
+.list__link {
+    display: block;
+    padding: 8px 25px 25px;
     color: #3D3D3D;
-    margin: 0;
-    padding: 0;
-    background-color: #fff;
+    transition: color 0.3s;
 }
 
-.header {}
+.list__link:hover {
+    color: #46A358;
+}
 
+.list__item.active {
+    border-bottom: 3px solid #46A358;
+    font-family: 'Cera Pro Bold', sans-serif;
+}
 
-.header__inner {
+.btn__login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 17px 7px 17px;
+    gap: 4px;
+    border-radius: 6px;
+    background-color: #46A358;
+    color: #fff;
+    font-family: 'Cera Pro Medium', sans-serif;
+    font-size: 16px;
+    border: none;
+}
+
+.btn__login:hover {
+    background-color: #368c44;
+}
+
+.welcome {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 120px;
+    background: linear-gradient(98deg, rgba(245, 245, 245, 0.50) -23.46%, rgba(245, 245, 245, 0.50) 107.51%);
 }
 
-.logo {}
-
-.menu {
+.welcome__content {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: start;
+    padding-left: 43px;
+    width: 100%;
 }
 
-.menu__list {
-    display: flex;
-    justify-content: space-between;
-    column-gap: 50px;
+.w__text {
+    margin-top: 68px;
+    color: #3D3D3D;
+    font-family: "Cera Pro Medium", sans-serif;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
 }
 
-.menu__item {}
+.w__title {
+    margin-top: 7px;
+    color: #3D3D3D;
+    font-family: "Cera Pro Bold", sans-serif;
+    font-size: 70px;
+    line-height: 70px;
+    text-transform: uppercase;
+}
 
-.menu__link {}
+.w__title span {
+    color: #46A358;
+}
 
-.logo__btn {}
+.w__content {
+    color: #727272;
+    font-family: "Cera Pro Regular", sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    margin-top: 5px;
+}
+
+.w__btn {
+    margin-top: 44px;
+    margin-bottom: 85px;
+    padding: 11px 27px 9px 26px;
+    color: #fff;
+    background-color: #46A358;
+    border-radius: 6px;
+    font-family: "Cera Pro Medium", sans-serif;
+    line-height: 20px;
+    text-transform: uppercase;
+}
+
+.w__btn:hover {
+    background-color: #368c44;
+}
+
+.plants {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.plant {
+    position: absolute;
+}
+
+.big {
+    right: -115px;
+    bottom: -227px;
+    width: 507px;
+}
+
+.small {
+    right: 210px;
+    bottom: -213px;
+    width: 137px;
+}
