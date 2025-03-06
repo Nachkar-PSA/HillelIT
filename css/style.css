@@ -34,6 +34,7 @@ header {
     align-items: start;
     justify-content: space-between;
     border-bottom: 1px solid rgba(70, 163, 88, 0.50);
+    margin-bottom: 12px;
 }
 
 .list {
@@ -83,9 +84,16 @@ header {
 
 .welcome {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    padding: 0 120px;
+}
+
+.welcome__container {
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     background: linear-gradient(98deg, rgba(245, 245, 245, 0.50) -23.46%, rgba(245, 245, 245, 0.50) 107.51%);
 }
 
@@ -155,13 +163,13 @@ header {
 }
 
 .big {
-    right: -115px;
+    right: 0;
     bottom: -227px;
     width: 507px;
 }
 
 .small {
-    right: 210px;
+    right: 320px;
     bottom: -213px;
     width: 137px;
 }
