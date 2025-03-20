@@ -13,3 +13,17 @@ if (loginButton) {
     window.location.href = "registration.html";
   });
 }
+
+// Add the Event Listener for hover active class to the menu items
+document.querySelectorAll(".list__item").forEach((item) => {
+  item.addEventListener("mouseenter", () => {
+    document
+      .querySelectorAll(".list__item")
+      .forEach((el) => el.classList.remove("active")); // Remove active class from all items
+    item.classList.add("active"); // Add active class to the hovered item
+  });
+
+  item.addEventListener("mouseleave", () => {
+    item.classList.remove("active"); // Remove active class when mouse leaves
+  });
+});
