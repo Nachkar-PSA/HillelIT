@@ -25,6 +25,8 @@
     font-style: normal;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 header {
     padding: 30px 120px 0 120px;
 }
@@ -46,6 +48,89 @@ header {
 .list__item {
     font-family: 'Cera Pro Regular', sans-serif;
     font-size: 16px;
+    position: relative;
+}
+
+.list__item,
+.submenu__item {
+    position: relative;
+}
+
+.submenu {
+    position: absolute;
+    top: calc(100% + 12px);
+    left: 0;
+    width: 188px;
+    background-color: #EDF6EE;
+    color: #3D3D3D;
+    font-family: 'Encode Sans Expanded', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    z-index: 10;
+    opacity: 0;
+    transform: translateY(-10px);
+    visibility: hidden;
+    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
+}
+
+.list__item:hover>.submenu {
+    opacity: 1;
+    transform: translateY(0);
+    visibility: visible;
+}
+
+.submenu__link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px 14px 8px 14px;
+    text-decoration: none;
+    color: #3D3D3D;
+    transition: color 0.3s ease;
+}
+
+.submenu__link:hover svg path {
+    fill: #FFF;
+}
+
+.submenu__link:hover svg {
+    transform: rotate(180deg);
+    transition: transform 0.3s ease, fill 0.3s ease;
+}
+
+.list__item:hover>.submenu {
+    display: block;
+}
+
+.submenu__item {
+    position: relative;
+}
+
+.submenu__second-level {
+    position: absolute;
+    top: -100px;
+    left: 100%;
+    width: 188px;
+    background-color: #F4FAF6;
+    z-index: 11;
+    opacity: 0;
+    transform: translateX(-10px);
+    visibility: hidden;
+    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
+}
+
+.submenu__item:hover>.submenu__second-level {
+    opacity: 1;
+    transform: translateX(0);
+    visibility: visible;
+}
+
+.submenu__link:hover {
+    background-color: #1A712A;
+    color: #FFF;
+    font-family: "Encode Sans Expanded" sans-serif;
+    font-size: 16px;
+    font-weight: 700;
 }
 
 .list__link {
@@ -62,6 +147,16 @@ header {
 .list__item.active {
     border-bottom: 3px solid #46A358;
     font-family: 'Cera Pro Bold', sans-serif;
+}
+
+.list__item:hover::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 15px;
+    background: transparent;
 }
 
 .btn__login {
