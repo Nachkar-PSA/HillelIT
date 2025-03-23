@@ -395,6 +395,7 @@ header {
 }
 
 .product__card {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -403,11 +404,70 @@ header {
     background-color: #FBFBFB;
 }
 
+.product__card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #46A358;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+}
+
+.product__card:hover::before {
+    transform: scaleX(1);
+}
+
+.product__card:hover .discount__label {
+    display: block;
+}
+
+.discount__label {
+    position: absolute;
+    top: 14px;
+    left: 0;
+    padding: 7px 8px 6px 9px;
+    background-color: #46A358;
+    color: #FFF;
+    font-family: "Cera Pro Medium";
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 16px;
+    visibility: hidden;
+}
+
 .prod__img {
     width: 250px;
     height: 250px;
     margin: 25px 4px;
     object-fit: contain;
+}
+
+.prod__icons {
+    position: absolute;
+    display: flex;
+    gap: 26px;
+    padding: 8px 6px 7px 6px;
+    bottom: 50px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+.icon__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.product__card:hover .prod__icons,
+.product__card:hover .old__price,
+.product__card:hover .discount__label {
+    opacity: 1;
+    visibility: visible;
 }
 
 .prod__container {
@@ -433,6 +493,18 @@ header {
     font-family: "Cera Pro Bold";
     font-size: 18px;
     line-height: 16px;
+    display: flex;
+    gap: 18px;
+}
+
+.old__price {
+    text-decoration: line-through;
+    color: #A5A5A5;
+    font-family: "Cera Pro Regular";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 16px;
+    visibility: hidden;
 }
 
 .numbers {
@@ -556,6 +628,10 @@ header {
     font-weight: 500;
     line-height: 20px;
     padding: 11px 28px;
+}
+
+.content__btn:hover {
+    background-color: #368c44;
 }
 
 .blog {
@@ -776,6 +852,12 @@ header {
     text-decoration: none;
 }
 
+.footer__account-link:hover,
+.footer__help-link:hover,
+.footer__categories-link:hover {
+    color: #46A358;
+}
+
 .footer__footer-title {
     color: #3D3D3D;
     font-family: "Cera Pro Bold", sans-serif;
@@ -794,7 +876,9 @@ header {
 }
 
 .footer__social-link:hover svg path {
-    fill: #f32588c9;
+    fill: #46A358;
+    transform: scale(1.2);
+    transform-origin: center;
 }
 
 .footer__payment-title {
