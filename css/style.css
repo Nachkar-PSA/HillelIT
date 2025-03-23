@@ -700,6 +700,16 @@ header {
     line-height: 16px;
 }
 
+.read__more:hover {
+    color: #46A358;
+}
+
+.read__more:hover svg path {
+    fill: #46A358;
+    transform: scale(1.3);
+    transform-origin: center;
+}
+
 .footer {
     display: flex;
     flex-direction: column;
@@ -778,9 +788,16 @@ header {
 
 .footer__email-input {
     padding: 12px 11px;
-    border: none;
+    border: 1px solid transparent;
+    border-radius: 6px;
     width: 100%;
 }
+
+.footer__email-input:focus {
+    border-color: #3B5999;
+    outline: none;
+}
+
 
 .footer__email-btn {
     background-color: #46A358;
