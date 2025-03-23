@@ -622,3 +622,140 @@ header {
     font-weight: 500;
     line-height: 16px;
 }
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 0 22px;
+}
+
+.footer__header {
+    display: flex;
+    align-items: center;
+    background-color: #FBFBFB;
+    padding: 24px 25px;
+    gap: 61px;
+    position: relative;
+}
+
+.footer__header-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 204px;
+    position: relative;
+}
+
+.footer__header-card:nth-child(-n+2)::after {
+    content: "";
+    display: block;
+    height: 1px;
+    width: 187px;
+    background: rgba(70, 163, 88, 0.10);
+    transform: rotate(-90deg);
+    position: absolute;
+    right: -125px;
+}
+
+.footer__image {}
+
+.footer__header-title {
+    margin-top: 15px;
+    color: #3D3D3D;
+    font-family: "Cera Pro Bold", sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 16px;
+}
+
+.footer__header-text {
+    margin-top: 9px;
+    color: #727272;
+    font-family: "Cera Pro Regular", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+.footer__header-like {
+    display: flex;
+    flex-direction: column;
+    max-width: 354px;
+
+}
+
+.footer__header-like-title {
+    margin-bottom: 25px;
+}
+
+.footer__header-form {
+    overflow: hidden;
+    height: 40px;
+    display: flex;
+    border-radius: 6px;
+    background: #FFF;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.06);
+    justify-content: space-between;
+    margin-bottom: 18px;
+}
+
+.footer__email-input {
+    padding: 12px 11px;
+    border: none;
+    width: 100%;
+}
+
+.footer__email-btn {
+    background-color: #46A358;
+    color: #FFF;
+    font-family: "Cera Pro Bold", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 16px;
+    padding: 12px 26px;
+}
+
+.footer__contacts {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__address {}
+
+.footer__address-text {}
+
+.footer__email {}
+
+.footer__phone {}
+
+.footer__footer {}
+
+.footer__help {}
+
+.footer__help-title {}
+
+.footer__help-list {}
+
+.footer__help-link {}
+
+.footer__categories {}
+
+.footer__categories-title {}
+
+.footer__categories-list {}
+
+.footer__categories-link {}
+
+.footer__cocial-media {}
+
+.footer__social-title {}
+
+.footer__social-list {}
+
+.footer__social-link {}
+
+.footer__payment {}
+
+.footer__rights {}
