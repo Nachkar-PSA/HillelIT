@@ -733,7 +733,7 @@ header {
     justify-content: center;
     align-items: flex-start;
     background-repeat: no-repeat;
-    background-position: 0 8px;
+    background-position: 0 0px;
     max-width: 204px;
     padding-top: 111px;
 }
