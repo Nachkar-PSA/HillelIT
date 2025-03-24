@@ -727,12 +727,27 @@ header {
 }
 
 .footer__header-card {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    background-repeat: no-repeat;
+    background-position: 0 8px;
     max-width: 204px;
-    position: relative;
+    padding-top: 111px;
+}
+
+.footer__header-card:nth-child(1) {
+    background-image: url('../img/footer_1.svg');
+}
+
+.footer__header-card:nth-child(2) {
+    background-image: url('../img/footer_2.svg');
+}
+
+.footer__header-card:nth-child(3) {
+    background-image: url('../img/footer_3.svg');
 }
 
 .footer__header-card:nth-child(-n+2)::after {
@@ -744,10 +759,10 @@ header {
     transform: rotate(-90deg);
     position: absolute;
     right: -125px;
+    top: 96px;
 }
 
 .footer__header-title {
-    margin-top: 15px;
     color: #3D3D3D;
     font-family: "Cera Pro Bold", sans-serif;
     font-size: 17px;
