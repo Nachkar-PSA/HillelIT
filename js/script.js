@@ -23,7 +23,29 @@ document.querySelectorAll(".list__item").forEach((item) => {
     item.classList.add("active"); // Add active class to the hovered item
   });
 
-  item.addEventListener("mouseleave", () => {
-    item.classList.remove("active"); // Remove active class when mouse leaves
+  // item.addEventListener("mouseleave", () => {
+  //   item.classList.remove("active"); // Remove active class when mouse leaves
+  // });
+  item.addEventListener("click", () => {
+    document
+      .querySelectorAll(".list__item")
+      .forEach((el) => el.classList.remove("active")); // Reset active
+    item.classList.add("active"); // Fixed active class on click
+  });
+});
+
+document.querySelectorAll(".list__by-item").forEach((item) => {
+  item.addEventListener("mouseenter", () => {
+    document
+      .querySelectorAll(".list__by-item")
+      .forEach((el) => el.classList.remove("active")); // Remove active class from all items
+    item.classList.add("active"); // Add active class to the hovered item
+  });
+
+  item.addEventListener("click", () => {
+    document
+      .querySelectorAll(".list__by-item")
+      .forEach((el) => el.classList.remove("active")); // Reset active
+    item.classList.add("active"); // Fixed active class on click
   });
 });

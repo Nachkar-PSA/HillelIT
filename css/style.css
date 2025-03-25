@@ -368,6 +368,7 @@ header {
     cursor: pointer;
 }
 
+
 .list__by-item.active {
     color: #46A358;
     font-family: "Cera Pro Bold";
@@ -385,6 +386,19 @@ header {
     display: flex;
     align-items: center;
     gap: 5px;
+}
+
+.list__by-btn:hover {
+    color: #46A358;
+}
+
+.list__by-btn:hover .list__icon svg path {
+    stroke: #46A358;
+    fill: #46A358;
+}
+
+.list__icon:hover svg {
+    transition: transform 0.3s ease, fill 0.3s ease;
 }
 
 .content__card {
