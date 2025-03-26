@@ -49,3 +49,20 @@ document.querySelectorAll(".list__by-item").forEach((item) => {
     item.classList.add("active"); // Fixed active class on click
   });
 });
+
+// Add the Event Listener for hover active class to the menu items//
+document.querySelectorAll(".menu__item").forEach((item) => {
+  item.addEventListener("mouseenter", () => {
+    document
+      .querySelectorAll(".menu__item")
+      .forEach((el) => el.classList.remove("active")); // Remove active class from all items
+    item.classList.add("active"); // Add active class to the hovered item
+  });
+
+  item.addEventListener("click", () => {
+    document
+      .querySelectorAll(".menu__item")
+      .forEach((el) => el.classList.remove("active")); // Reset active
+    item.classList.add("active"); // Fixed active class on click
+  });
+});
