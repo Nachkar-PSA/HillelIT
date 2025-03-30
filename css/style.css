@@ -32,9 +32,11 @@
     src: url('../fonts/Hanged\ Letters.ttf') format('truetype');
 }
 
-
-header {
-    padding: 30px 120px 0 120px;
+.container__main {
+    max-width: 1230px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 30px 15px;
 }
 
 .header {
@@ -256,7 +258,7 @@ header {
 .container {
     display: flex;
     gap: 50px;
-    padding: 46px 120px 94px 120px;
+    padding: 46px 0 94px 0;
 }
 
 .sidebar {
@@ -294,7 +296,31 @@ header {
     cursor: pointer;
 }
 
-.menu__item.active {
+/* .menu__item.active {
+    color: #46A358;
+    font-family: "Cera Pro Bold", sans-serif;
+    font-size: 18px;
+    line-height: 40px;
+} */
+
+.menu__checkbox {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    cursor: pointer;
+}
+
+.menu__checkbox-input {
+    display: none;
+}
+
+.menu__checkbox-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.menu__checkbox-input:checked+.menu__checkbox-content {
     color: #46A358;
     font-family: "Cera Pro Bold", sans-serif;
     font-size: 18px;
