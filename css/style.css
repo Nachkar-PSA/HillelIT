@@ -192,7 +192,7 @@
 }
 
 .welcome__container {
-    max-width: 1200px;
+    /* max-width: 1200px; */
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -700,7 +700,7 @@
 }
 
 .blog__card-text {
-    width: 268px;
+    max-width: 268px;
     background-color: #FBFBFB;
     padding: 9px 11px 13px 15px;
 }
@@ -755,12 +755,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 100px 0 22px;
+    padding: 100px 15px 22px;
 }
 
 .footer__header {
     display: flex;
     align-items: center;
+    width: 100%;
     background-color: #FBFBFB;
     padding: 24px 25px;
     gap: 61px;
@@ -911,7 +912,6 @@
     justify-content: space-between;
     padding: 33px 155px 29px 25px;
     width: 100%;
-    max-width: 1200px;
 }
 
 .footer__account-link,
@@ -971,4 +971,296 @@
     font-weight: 400;
     line-height: 30px;
     margin-bottom: 8px;
+}
+
+@media screen and (min-width: 1441px) and (max-width: 2560px) {
+    .container__main {
+        max-width: 2520px;
+    }
+
+    .header__svg {
+        width: 210px;
+        height: 50px;
+    }
+
+    .submenu {
+        font-size: 20px;
+    }
+
+    .submenu__second-level {
+        top: -120px;
+    }
+
+    .submenu__link:hover {
+        font-size: 20px;
+    }
+
+    .list__item {
+        font-size: 24px;
+    }
+
+    .btn__login {
+        font-size: 24px;
+    }
+
+    .w__text {
+        font-size: 24px;
+        line-height: 18px;
+    }
+
+    .w__title {
+        font-size: 98px;
+        line-height: 86px;
+        margin-top: 14px;
+    }
+
+    .w__content {
+        font-size: 24px;
+        line-height: 44px;
+        margin-top: 10px;
+    }
+
+    .w__btn {
+        font-size: 24px;
+        line-height: 24px;
+    }
+
+    .btn__item {
+        font-size: 28px;
+        width: 46px;
+        height: 46px;
+        border-radius: 5px;
+    }
+
+    .sidebar {
+        min-width: 20%;
+    }
+
+    .menu__title {
+        font-size: 28px;
+        line-height: 20px;
+    }
+
+    .menu__item {
+        font-size: 24px;
+        line-height: 50px;
+    }
+
+    .menu__checkbox-input:checked+.menu__checkbox-content {
+        color: #46A358;
+        font-family: "Cera Pro Bold", sans-serif;
+        font-size: 24px;
+        line-height: 50px;
+    }
+
+    .wrapper {
+        max-width: 100%;
+    }
+
+    .short__by {
+        font-size: 24px;
+        line-height: 20px;
+    }
+
+    .content__card {
+        max-width: 100%;
+        justify-content: space-between;
+    }
+
+    .product__card {
+        min-width: 25%;
+    }
+
+    .prod__title {
+        font-size: 28px;
+        line-height: 40px;
+    }
+
+    .prod__price {
+        font-size: 28px;
+    }
+
+    .content__title {
+        min-width: 265px;
+        font-size: 32px;
+        line-height: 28px;
+    }
+
+    .top__content {
+        justify-content: space-around;
+    }
+
+    .content__img {
+        max-width: 50%;
+    }
+
+    .content__text {
+        padding: 80px 30px 45px 380px;
+    }
+
+    .blog__content {
+        justify-content: space-between;
+    }
+
+    .blog__title {
+        font-size: 42px;
+    }
+
+    .blog__text {
+        font-size: 24px;
+    }
+
+    .footer__header {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .footer__header-card:nth-child(-n+2)::after {
+        content: "";
+        display: block;
+        height: 3px;
+        width: 187px;
+        background: rgba(70, 163, 88, 0.10);
+        transform: rotate(-90deg);
+        position: absolute;
+        right: -310px;
+        top: 96px;
+    }
+
+    .footer__contacts {
+        width: 100%;
+    }
+
+    .footer__footer {
+        max-width: 100%;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+    .container__main {
+        max-width: 1400px;
+    }
+
+    .header {
+        max-width: 100%;
+    }
+
+    .welcome__container {
+        justify-content: space-between;
+    }
+
+    .wrapper {
+        max-width: 100%;
+    }
+
+    .content__card {
+        max-width: 100%;
+        justify-content: space-between;
+    }
+
+    .top__content {
+        justify-content: space-between;
+    }
+
+    .blog__content {
+        justify-content: space-between;
+    }
+
+    .prod__title {
+        font-size: 18px;
+    }
+
+    .prod__price {
+        font-size: 20px;
+    }
+
+    .short__by {
+        font-size: 18px;
+    }
+
+    .footer__header {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .footer__contacts {
+        width: 100%;
+    }
+
+    .footer__footer {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .container__main {
+        max-width: 1024px;
+    }
+
+    .sidebar {
+        max-width: 25%;
+    }
+
+    .banner {
+        max-width: 100%;
+    }
+
+    .banner__image {
+        background: url(../img/circle_1.png) 60px 5px / 15px 15px no-repeat, url(../img/circle_2.png) 16px 199px / 22px 22px no-repeat, url(../img/clrcle_3.png) 225px 243px / 40px 40px no-repeat, url(../img/image_banner.png) center / contain no-repeat;
+    }
+
+    .container {
+        gap: 30px;
+    }
+
+    .content__card {
+        gap: 50px 20px;
+    }
+
+    .top__content {
+        flex-wrap: wrap;
+        gap: 45px;
+    }
+
+    .content__text {
+        padding: 37px 30px 45px 360px;
+    }
+
+    .product__card {
+        max-width: 225px;
+    }
+
+    .prod__title {
+        font-size: 16px;
+    }
+
+    .prod__price {
+        font-size: 18px;
+    }
+
+    .blog__content {
+        column-gap: 25px;
+    }
+
+    .blog__card-text {
+        min-height: 202px;
+    }
+
+    .footer__header {
+        padding: 24px 25px;
+        gap: 30px;
+    }
+
+    .footer__contacts {
+        gap: 85px;
+    }
+
+    .footer__footer {
+        padding: 25px 29px;
+    }
+
+    .footer__header-card:nth-child(-n+2)::after {
+        right: -98px;
+    }
 }
